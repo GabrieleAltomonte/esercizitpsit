@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>esercizio paragrafi</title>
+</head>
+<body>
+<textarea id="Ta"></textarea>
+<button id="b1">Aggiungi</button>
+<script>
+oggettoButton=document.getElementById("b1")
+oggettoTa=document.getElementById("Ta")
+oggettoButton.addEventListener("click",AggiungiP)
+function AggiungiP()
+{
+nuovoP=document.createElement("p")
+nuovoP.innerHTML=oggettoTa.value
+oggettoBody=oggettoTa.parentNode
+oggettoBody.appendChild(nuovoP)
+}
+</script>
+</body>
+</html>
